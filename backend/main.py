@@ -18,13 +18,8 @@ app = FastAPI(title="Gantt Structured API", version="1.0.0")
 # 개발용 CORS. 배포 시에는 실제 프론트엔드 주소만 남기는 것을 권장합니다.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:3001",
-        "http://127.0.0.1:3001",
-    ],
-    allow_credentials=True,
+allow_origins=["*"],
+allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

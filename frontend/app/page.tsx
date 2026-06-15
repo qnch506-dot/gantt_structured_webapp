@@ -38,7 +38,7 @@ type Period = {
   widthClass: string;
 };
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000";
+const API_BASE = "https://ganttstructuredwebapp-production.up.railway.app";
 const PREVIEW_ROW_LIMIT = 150;
 
 
